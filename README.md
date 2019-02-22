@@ -9,4 +9,4 @@ Différentes solutions créées pour encadrer les leçons enseignées dans le ca
 - Microsoft (2014). ASP.NET State Management Overview (docs.microsoft.com). [En ligne] https://docs.microsoft.com/en-us/previous-versions/75x4ha6s(v=vs.140) [Consulté le 09 février 2019].
 - Microsoft (2014). ASP.NET State Management Recommandation (docs.microsoft.com).
   [En ligne] https://docs.microsoft.com/en-us/previous-versions/z1hkazw7(v=vs.140) [Consulté le 09 février 2019].
-  - Microsoft ASP.NET (2016). Managing Application State (readthedocs.io). [En ligne] https://jakeydocs.readthedocs.io/en/latest/fundamentals/app-state.html [Consulté le 22 février 2019].
+- Microsoft ASP.NET (2016). Managing Application State (readthedocs.io). [En ligne] https://jakeydocs.readthedocs.io/en/latest/fundamentals/app-state.html [Consulté le 22 février 2019].
