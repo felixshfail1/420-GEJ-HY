@@ -1,2 +1,2 @@
-GEJ - Développement de commerce électronique
+# GEJ - Développement de commerce électronique
 
