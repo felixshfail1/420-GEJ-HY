@@ -19,7 +19,7 @@ namespace FilterExample.Controllers {
 
         [Profile]
         [ViewResultDetails]
-        [DiagnosticLogger]
+        [DiagnosticAttribute]
         public IActionResult Index() {
             double avg = averager.CalculateAverage();
 

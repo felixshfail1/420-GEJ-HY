@@ -9,7 +9,7 @@
     <table class="table table-sm table-striped table-bordered">
         <thead><tr><th>Name</th><th>Value</th></tr></thead>
         <tbody>
-            @if(dict.Count > 0) {
+            @if(dict.Any()) {
                 @foreach(var kvp in Model) {
                     <tr><td>@kvp.Key</td><td>@kvp.Value</td></tr>
                 }
