@@ -2,12 +2,12 @@
 
 @inject IOptions<StripeOptions> StripeOptions
 
-@{ ViewData["Title"] = "Elements Example"; }
+@{ ViewData["Title"] = "Request Button Example"; }
 
 <section class="bg-light rounded p-2">
     <div class="row">
         <div class="col">
-            <h2 class="mb-2 font-weight-bold">Payment with Elements</h2>
+            <h2 class="mb-2 font-weight-bold">Request Payment Button</h2>
         </div>
     </div>
 
@@ -19,7 +19,7 @@
         <div class="col-6">
             <div class="p-4">
                 <div class="lead my-2">
-                    <span class="font-weight-bold">Price: </span><span>@Model.Price.ToString("C")</span>
+                    <span class="font-weight-bold">Price: </span><span>@Model.Price.ToString("C")/month</span>
                 </div>
 
                 <div class="lead">
@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="float-right">
-                                <button id="payment-request-button" class="btn btn-primary" type="button" href="#payment-form">Buy</button>
+                                <button id="subscribe-button" class="btn btn-primary" type="button" href="#payment-form">subscribe</button>
                             </div>
                         </div>
                     </div>
@@ -53,9 +53,8 @@
     </div>
 </section>
 
-
 <section id="payment-section" class="modal fade rounded" role="dialog">
-    <form id="payment-form" class="modal-dialog modal-content bg-light" method="post" accept-charset="UTF-8">
+    <form id="payment-form" class="modal-dialog modal-content bg-light" action="#" method="post" accept-charset="UTF-8">
 
         <div class="modal-header">
             <h4 class="modal-title">Payment Informations</h4>
@@ -131,7 +130,7 @@
             "use strict";
 
             $(document).ready(function () {
-                $("#payment-request-button").on("click", function () {
+                $("#subscribe-button").on("click", function () {
                     $("#payment-section").modal({
                         backdrop: 'static'
                     });
@@ -183,19 +182,22 @@
                 });
 
                 function stripeTokenHandler(token) {
-                    fetch('/payment/charges', {
+                    fetch('/subscription/charges', {
                         method: 'post',
                         headers: { 'content-type': 'application/json' },
                         body: JSON.stringify({
                             token: token.id,
                             description: "@Model.Name",
                             amountInCents: @Model.Price * 100, // Price in cents
-                            currencyCode: "cad"
+                            currencyCode: "cad",
+                            name: $("#name").val(),
+                            email: $("#email").val(),
+                            phone: $("#phone").val()
                         })
                     // Report to the browser that the payment was successful or failed.
                     }).then(function (response) {
                         if (response.ok) {
-                            window.location.replace("@Url.Action("Confirmation")")
+                            window.location.replace("@Url.Action("Confirmation", "Payment")")
                         } else {
                             e.complete('fail');
                         }

@@ -30,3 +30,4 @@ C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\obj\Debug\netcoreapp2.1\Us
 C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Confirmation.g.cshtml.cs
 C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Elements.g.cshtml.cs
 C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\obj\Debug\netcoreapp2.1\Razor\Views\Payment\RequestButton.g.cshtml.cs
+C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\obj\Debug\netcoreapp2.1\Razor\Views\Subscription\Index.g.cshtml.cs
