@@ -67,9 +67,9 @@
                     <label for="name" class="control-label">Name</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text bg-white"><i class="fas fa-user"></i></span>
                         </div>
-                        <input id="name" name="name" class="form-control" type="text" placeholder="Nom" required>
+                        <input id="name" name="name" class="form-control border-left-0" type="text" placeholder="Nom" required>
                     </div>
                 </div>
             </div>
@@ -79,9 +79,9 @@
                     <label for="phone" class="control-label">Phone</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            <span class="input-group-text bg-white"><i class="fas fa-phone"></i></span>
                         </div>
-                        <input id="phone" name="phone" class="form-control" type="text" placeholder="000-000-0000" required>
+                        <input id="phone" name="phone" class="form-control border-left-0" type="text" placeholder="Phone number" required>
                     </div>
                 </div>
             </div>
@@ -91,9 +91,9 @@
                     <label for="email" class="control-label">Email</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            <span class="input-group-text bg-white"><i class="fas fa-at"></i></span>
                         </div>
-                        <input id="email" class="form-control" type="email" placeholder="Email" required>
+                        <input id="email" class="form-control border-left-0" type="email" placeholder="Email address" required>
                     </div>
                 </div>
             </div>
@@ -103,9 +103,9 @@
                     <label for="card" class="control-label">Card</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                            <span class="input-group-text bg-white"><i class="fas fa-credit-card"></i></span>
                         </div>
-                        <div id="card" class="form-control"></div>
+                        <div id="card" class="form-control border-left-0"></div>
                     </div>
                     <div id="card-errors" role="alert"></div>
                 </div>
@@ -144,25 +144,15 @@
                 let stripe = Stripe("@StripeOptions.Value.PublicKey");
                 let elements = stripe.elements();
 
-                var style = {
-                    base: {
-                        color: '#32325d',
-                        fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-                        fontSmoothing: 'antialiased',
-                        fontSize: '16px',
-                        '::placeholder': {
-                            color: '#aab7c4'
-                        }
-                    },
-                    invalid: {
-                        color: '#fa755a',
-                        iconColor: '#fa755a'
-                    }
-                };
-
                 let card = elements.create("card", {
-                    style: style,
-                    hideIcon: true
+                    style: {
+                        fontsize: "1rem",
+                        fontweight: "400",
+                        lineheight: "1.5",
+                        color: "#495057",
+                    },
+                    hideIcon: true,
+                    hidePostalCode: true
                 });
 
                 card.mount("#card");
