@@ -77,7 +77,7 @@ using Microsoft.Extensions.Options;
             ");
             EndContext();
             BeginContext(348, 78, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35296022f234438b987466d593e06806", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18ab5e220b2f483da511e508eef4d2b5", async() => {
                 BeginContext(416, 6, true);
                 WriteLiteral("Return");
                 EndContext();

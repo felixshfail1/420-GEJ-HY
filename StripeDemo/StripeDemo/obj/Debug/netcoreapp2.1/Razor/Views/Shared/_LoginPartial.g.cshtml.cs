@@ -87,12 +87,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("    ");
             EndContext();
             BeginContext(172, 481, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2756b5f998d345bc9abae8f2e2bdc881", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15c38f41206f48758545b687ce0afce8", async() => {
                 BeginContext(310, 85, true);
                 WriteLiteral("\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n            <li class=\"nav-item\">");
                 EndContext();
                 BeginContext(395, 118, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08908b63e9af41a78563d49f48722263", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0382fdbf222b4833b371ca9bba4be232", async() => {
                     BeginContext(484, 25, false);
 #line 9 "C:\Users\hlapointe\Projects\GEJ\StripeDemo\StripeDemo\Views\Shared\_LoginPartial.cshtml"
                                                                                                                     Write(UserMgr.GetUserName(User));
@@ -161,7 +161,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("    <ul class=\"nav navbar-nav navbar-right\">\r\n        <li class=\"nav-item\">");
             EndContext();
             BeginContext(740, 81, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41cbea3f2ca8410f909466da5644abe5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d97fe178c74944ceaadd1e29e144ef49", async() => {
                 BeginContext(809, 8, true);
                 WriteLiteral("Register");
                 EndContext();
@@ -186,7 +186,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("</li>\r\n        <li class=\"nav-item\">");
             EndContext();
             BeginContext(857, 75, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aacb63021d6c4796b1f86f3618ccd294", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1d5b39f8caa1402da27b8c160d796f1e", async() => {
                 BeginContext(923, 5, true);
                 WriteLiteral("Login");
                 EndContext();
